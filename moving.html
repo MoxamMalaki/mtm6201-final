@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDEPOINT - Community Recreation Center</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+
+<body>
+    <div id="app-container">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-container">
+                    <div class="nav-wrapper">
+                        <div id="logo">BRIDEPOINT</div>
+                        
+                        <!-- Desktop Navigation -->
+                        <nav id="main-nav">
+                            <a href="index.html">Home</a>
+                            <a href="moving.html">Get Moving</a>
+                            <a href="feel.html">Feeling Good</a>
+                            <a href="#">Track It</a>
+                        </nav>
+                    </div>
+                    
+                    <!-- Desktop Actions -->
+                    <div class="header-actions">
+                        <a href="#" style="color: var(--brand-gray-dark); text-decoration: none; font-size: 0.875rem;">Help</a>
+                        <button class="btn-outline-dark">Login</button>
+                        <button class="btn-primary">Sign Up</button>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="moving.html">Get Moving</a>
+                    <a href="feel.html">Feeling Good</a>
+                    <a href="#">Track It</a>
+                    <a href="#">Help</a>
+                    <div class="mobile-actions">
+                        <button class="btn-outline-dark" style="width: 100%;">Login</button>
+                        <button class="btn-primary" style="width: 100%;">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero">
+                <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/99bc8e2acc-5e5f57974f24d3205c70.png" alt="Community center">
+                <div id="hero-content">
+                    <h1>Come and Join Our Community and Stay Healthy Together</h1>
+                    <p>Join our inclusive recreational center where families, friends, and neighbors come together to play, grow, and create lasting memories.</p>
+                    <div id="hero-cta">
+                        <button class="btn-secondary">Explore Programs</button>
+                        <button class="btn-outline">TAKE A TOUR</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Sessions Section -->
+            <section id="popular-sessions">
+                <div class="container">
+                    <h2 class="section-title">Popular Sessions</h2>
+                    
+                    <!-- Session Card 1 -->
+                    <div class="session-card card">
+                        <img src="img/pop-moving.png" alt="Youth Program">
+                        <div class="session-details">
+                            <h3>Youth Program</h3>
+                            <p class="instructor">with Kristin Summers</p>
+                            <p>The Youth Program empowers young people through fun, skill-building activities that promote leadership.</p>
+                            <button class="btn-secondary">BOOK NOW</button>
+                        </div>
+                        <div class="session-benefits">
+                            <h4>What you'll get:</h4>
+                            <ul>
+                                <li>Leadership and teamwork experience.</li>
+                                <li>Fun, hands-on activities and workshops.</li>
+                                <li>Opportunities to build confidence.</li>
+                                <li>A chance to make new friends.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Session Card 2 -->
+                    <div class="session-card card">
+                        <img src="img/pop2-moving.png" alt="Morning Yoga Flow">
+                        <div class="session-details">
+                            <h3>Morning Yoga Flow</h3>
+                            <p class="instructor">with Helena Williams</p>
+                            <p>Embrace the morning with a gentle flow to awaken your body and mind. All levels welcome.</p>
+                            <button class="btn-secondary">BOOK NOW</button>
+                        </div>
+                        <div class="session-benefits">
+                            <h4>What you'll get:</h4>
+                            <ul>
+                                <li>Increased flexibility and muscle strength.</li>
+                                <li>Improved respiration, energy, and vitality.</li>
+                                <li>Stress reduction and mental clarity.</li>
+                                <li>Connection with a welcoming community.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Session Card 3 -->
+                    <div class="session-card card">
+                        <img src="img/pop3-moving.png" alt="Family Fun Fitness">
+                        <div class="session-details">
+                            <h3>Family Fun Fitness</h3>
+                            <p class="instructor">with David Chen</p>
+                            <p>An energetic session for the whole family. Play games and get active together!</p>
+                            <button class="btn-secondary">BOOK NOW</button>
+                        </div>
+                        <div class="session-benefits">
+                            <h4>What you'll get:</h4>
+                            <ul>
+                                <li>Fun-filled physical activities for all ages.</li>
+                                <li>Quality bonding time with your family.</li>
+                                <li>Improved coordination and motor skills for kids.</li>
+                                <li>A joyful and supportive environment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Browse Activities Section -->
+            <section id="browse-activities">
+                <div class="container">
+                    <h2 class="section-title">Browse Activities</h2>
+                    <div class="activities-grid">
+                        <!-- Activity Card 1 -->
+                        <div class="activity-card card">
+                            <div>
+                                <h3><i class="fa-solid fa-water"></i> Aqua Aerobics</h3>
+                                <p>Low-impact cardio for all fitness levels.</p>
+                                <button class="btn-secondary">BOOK</button>
+                            </div>
+                            <ul>
+                                <li>Mon, Wed, Fri at 9:00 AM</li>
+                                <li>Instructor: Jane Doe</li>
+                                <li>Location: Main Pool</li>
+                                <li>Duration: 45 minutes</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Activity Card 2 -->
+                        <div class="activity-card card">
+                            <div>
+                                <h3><i class="fa-solid fa-sun"></i> Sunrise Yoga</h3>
+                                <p>Start your day with energizing poses.</p>
+                                <button class="btn-secondary">BOOK</button>
+                            </div>
+                            <ul>
+                                <li>Tue, Thu at 6:30 AM</li>
+                                <li>Instructor: Alex Ray</li>
+                                <li>Location: Wellness Studio</li>
+                                <li>Duration: 60 minutes</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Activity Card 3 -->
+                        <div class="activity-card card">
+                            <div>
+                                <h3><i class="fa-solid fa-person-running"></i> Morning Running</h3>
+                                <p>Jumpstart your day with a refreshing run.</p>
+                                <button class="btn-secondary">BOOK</button>
+                            </div>
+                            <ul>
+                                <li>Mon, Wed, at 6:00 AM</li>
+                                <li>Instructor: Jordan Blake</li>
+                                <li>Location: Outdoor Track</li>
+                                <li>Duration: 45 minutes</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Activity Card 4 -->
+                        <div class="activity-card card">
+                            <div>
+                                <h3><i class="fa-solid fa-wind"></i> Morning Flow</h3>
+                                <p>Boost your energy with mindful movement.</p>
+                                <button class="btn-secondary">BOOK</button>
+                            </div>
+                            <ul>
+                                <li>Tue, Thu at 6:30 AM</li>
+                                <li>Instructor: Jamie Lin</li>
+                                <li>Location: Rooftop Garden</li>
+                                <li>Duration: 60 minutes</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <button class="btn-primary" disabled>Less</button>
+                        <button class="btn-secondary">More</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Stretches Section -->
+            <section id="stretches">
+                <div class="container">
+                    <h2 class="section-title">Explore Different Types of Stretches with Professionals</h2>
+                    <div class="stretches-grid">
+                        <div class="stretch-item">
+                            <span>Dynamic Flexibility with Jordan</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="stretch-item">
+                            <span>Dynamic Warm-ups with Chloe</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="stretch-item">
+                           <span>Flex & Recover with Naomi</span>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="stretch-item">
+                           <span>Static Cool-downs with Alex</span>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="stretch-item">
+                           <span>Total Body Mobility with Devon</span>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="stretch-item">
+                           <span>PNF Stretching for Flexibility</span>
+                           <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <h3>BRIDEPOINT</h3>
+                        <p>Fostering belonging and shared experiences through joyful and energizing activities.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Sessions</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Wellness</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 BRIDEPOINT. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

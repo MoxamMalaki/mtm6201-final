@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIDEPOINT - Community Recreation Center</title>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    
+    <script>
+        window.FontAwesomeConfig = {
+            autoReplaceSvg: 'nest'
+        };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+
+<body>
+    <div id="app-container">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="header-container">
+                    <div class="nav-wrapper">
+                        <div id="logo">BRIDEPOINT</div>
+                        
+                        <!-- Desktop Navigation -->
+                        <nav id="main-nav">
+                            <a href="index.html">Home</a>
+                            <a href="moving.html">Get Moving</a>
+                            <a href="feel.html">Feeling Good</a>
+                            <a href="#">Track It</a>
+                        </nav>
+                    </div>
+                    
+                    <!-- Desktop Actions -->
+                    <div class="header-actions">
+                        <a href="#" style="color: var(--brand-gray-dark); text-decoration: none; font-size: 0.875rem;">Help</a>
+                        <button class="btn-outline-dark">Login</button>
+                        <button class="btn-primary">Sign Up</button>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu">
+                    <a href="index.html">Home</a>
+                    <a href="moving.html">Get Moving</a>
+                    <a href="feel.html">Feeling Good</a>
+                    <a href="#">Track It</a>
+                    <a href="#">Help</a>
+                    <div class="mobile-actions">
+                        <button class="btn-outline-dark" style="width: 100%;">Login</button>
+                        <button class="btn-primary" style="width: 100%;">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="hero">
+                     <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/48ebb24088-0ac5bedc4066442fd028.png" alt="A group of diverse, happy people during a sunset wellness retreat">
+                <div id="hero-content">
+                    <h1>Embrace Freedom,<br>Find Your Connection</h1>
+                    <p>Join a welcoming community focused on growth, wellness, and the pure joy of movement. Your journey to a healthier, happier you starts here.</p>
+                    <div id="hero-cta">
+                        <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">START NOW</button>
+                        <button class="btn-outline" style="padding: 12px 32px; font-weight: bold;">TAKE A TOUR</button>
+                    </div>
+                    <div id="hero-perks">
+                        <p>Perks with us</p>
+                        <div class="perks-container">
+                            <div class="perk-item">
+                                <span class="perk-icon" style="background: rgba(96, 165, 250, 0.5);">
+                                    <i class="fa-solid fa-users"></i>
+                                </span>
+                                <span>Inclusive Community</span>
+                            </div>
+                            <div class="perk-item">
+                                <span class="perk-icon" style="background: rgba(251, 191, 36, 0.5);">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </span>
+                                <span>Wellness Focused</span>
+                            </div>
+                            <div class="perk-item">
+                                <span class="perk-icon" style="background: rgba(251, 146, 60, 0.5);">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                </span>
+                                <span>Joyful Engagement</span>
+                            </div>
+                            <div class="perk-item">
+                                <span class="perk-icon" style="background: rgba(99, 102, 241, 0.5);">
+                                    <i class="fa-regular fa-handshake"></i>
+                                </span>
+                                <span>Respectful environment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Sessions Section -->
+            <section id="popular-sessions">
+                <div class="container">
+                    <h2 class="section-title">Popular Sessions</h2>
+                    
+                    <div class="session-block">
+                        <div class="session-content">
+                            <h3>Sunrise Vinyasa Flow</h3>
+                            <p>Energize your morning with a dynamic flow that connects breath to movement. Perfect for all levels, this session builds strength, flexibility, and inner peace as the sun rises.</p>
+                            <ul class="session-benefits">
+                                <li><i class="fa-solid fa-check"></i> Full-body engagement</li>
+                                <li><i class="fa-solid fa-check"></i> Mindful breathing techniques</li>
+                                <li><i class="fa-solid fa-check"></i> Stress reduction</li>
+                            </ul>
+                            <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">BOOK NOW</button>
+                        </div>
+                        <div class="session-image">
+                            <img src="img/pop-main.png" alt="A serene woman practicing yoga in a bright, sunlit studio">
+                        </div>
+                    </div>
+                    
+                    <div class="session-block">
+                        <div class="session-content">
+                            <h3>Community Dance Fit</h3>
+                            <p>Let loose and have fun in our most joyful class! A high-energy workout with great music and easy-to-follow moves. It's all about fun, engagement, and feeling great together.</p>
+                            <ul class="session-benefits">
+                                <li><i class="fa-solid fa-check"></i> Cardiovascular workout</li>
+                                <li><i class="fa-solid fa-check"></i> Mood-boosting playlist</li>
+                                <li><i class="fa-solid fa-check"></i> No dance experience needed</li>
+                            </ul>
+                            <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">BOOK NOW</button>
+                        </div>
+                        <div class="session-image">
+                            <img src="img/pop2-main.png" alt="A joyful group in an energetic community dance fitness class">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Activities Section -->
+            <section id="our-activities">
+                <div class="container">
+                    <h2 class="section-title">Our Activities</h2>
+                    <div class="activities-grid">
+                        <div class="activity-card">
+                            <div class="activity-icon" style="background: #dbeafe; color: #3b82f6;">
+                                <i class="fa-solid fa-person-swimming"></i>
+                            </div>
+                            <h4>Aqua Fitness</h4>
+                            <p>Low-impact cardio and strength training in the pool.</p>
+                            <div class="activity-status">
+                                <span class="status-badge">Join</span>
+                                <span class="text-muted">7 spots left</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon" style="background: #d1fae5; color: #10b981;">
+                                <i class="fa-solid fa-person-hiking"></i>
+                            </div>
+                            <h4>Trail Walking Group</h4>
+                            <p>Explore local nature trails with a friendly, supportive group.</p>
+                            <div class="activity-status">
+                                <span class="status-badge">Join</span>
+                                <span class="text-muted">10 spots left</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon" style="background: #e9d5ff; color: #9333ea;">
+                                <i class="fa-solid fa-om"></i>
+                            </div>
+                            <h4>Mindful Meditation</h4>
+                            <p>Guided sessions to calm the mind and reduce stress.</p>
+                            <div class="activity-status">
+                                <span class="status-badge">Join</span>
+                                <span class="text-muted">3 spots left</span>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-card">
+                            <div class="activity-icon" style="background: #fee2e2; color: #ef4444;">
+                                <i class="fa-solid fa-dumbbell"></i>
+                            </div>
+                            <h4>Strength Circuit</h4>
+                            <p>Build functional strength with a varied, full-body workout.</p>
+                            <div class="activity-status">
+                                <span class="status-badge">Join</span>
+                                <span class="text-muted">2 spots left</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="text-align: center;">
+                        <button class="btn-gradient">BROWSE ALL</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Connection and Share Section -->
+            <section id="connection-share">
+                <div class="container">
+                    <h2 class="section-title">Connection and Share</h2>
+                    <div class="connection-container">
+                        <div class="main-post">
+                            <div class="main-post-image">
+                                <img src="img/main-user.png" alt="A happy woman in a fitness class">
+                            </div>
+                            <div class="main-post-content">
+                                <p>Absolutely buzzing after today's class! The energy was incredible. So grateful for this community that makes fitness feel like a party. 🎉 #FeelTheRhythm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feed-column">
+                            <div class="feed-item">
+                                <img src="img/user1.png" alt="David Chen">
+                                <div class="feed-item-content">
+                                    <p>David Chen</p>
+                                    <p>Hit a new PB on the morning trail walk! 5k in under 30!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feed-item">
+                                <img src="img/user2.png" alt="Aisha Khan">
+                                <div class="feed-item-content">
+                                    <p>Aisha Khan</p>
+                                    <p>Shared a recipe for her post-workout energy salad.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feed-item">
+                                <img src="img/user3.png" alt="Tom Williams">
+                                <div class="feed-item-content">
+                                    <p>Tom Williams</p>
+                                    <p>Is feeling centered after the sunrise meditation session.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feed-item">
+                                <img src="img/user4.png" alt="Margaret Thomas">
+                                <div class="feed-item-content">
+                                    <p>Margaret Thomas</p>
+                                    <p>Is feeling centered after the sunrise meditation session.</p>
+                                </div>
+                            </div>
+                            
+                            <button class="btn-secondary" style="width: 100%; padding: 12px; font-weight: bold;">POST THREAD</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-grid">
+                    <div>
+                        <h3>BRIDEPOINT</h3>
+                        <p>Fostering belonging and shared experiences through joyful and energizing activities.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Sessions</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Wellness</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 BRIDEPOINT. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
