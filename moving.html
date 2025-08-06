@@ -18,15 +18,13 @@
 
 <body>
     <div id="app-container">
-        <!-- Header -->
-        <header>
+        <header role="banner">
             <div class="container">
                 <div class="header-container">
                     <div class="nav-wrapper">
-                        <div id="logo">BRIDEPOINT</div>
+                        <div id="logo" role="heading" aria-level="1">BRIDEPOINT</div>
                         
-                        <!-- Desktop Navigation -->
-                        <nav id="main-nav">
+                        <nav id="main-nav" role="navigation">
                             <a href="index.html">Home</a>
                             <a href="moving.html">Get Moving</a>
                             <a href="feel.html">Feeling Good</a>
@@ -34,26 +32,23 @@
                         </nav>
                     </div>
                     
-                    <!-- Desktop Actions -->
                     <div class="header-actions">
                         <a href="#" style="color: var(--brand-gray-dark); text-decoration: none; font-size: 0.875rem;">Help</a>
                         <button class="btn-outline-dark">Login</button>
                         <button class="btn-primary">Sign Up</button>
                     </div>
                     
-                    <!-- Mobile Menu Button -->
-                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-expanded="false" aria-label="Toggle mobile menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
                 
-                <!-- Mobile Menu -->
-                <div id="mobile-menu">
-                    <a href="index.html">Home</a>
-                    <a href="moving.html">Get Moving</a>
-                    <a href="feel.html">Feeling Good</a>
-                    <a href="#">Track It</a>
-                    <a href="#">Help</a>
+                <div id="mobile-menu" role="menu" aria-hidden="true">
+                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="moving.html" role="menuitem">Get Moving</a>
+                    <a href="feel.html" role="menuitem">Feeling Good</a>
+                    <a href="#" role="menuitem">Track It</a>
+                    <a href="#" role="menuitem">Help</a>
                     <div class="mobile-actions">
                         <button class="btn-outline-dark" style="width: 100%;">Login</button>
                         <button class="btn-primary" style="width: 100%;">Sign Up</button>
@@ -62,8 +57,7 @@
             </div>
         </header>
 
-        <main>
-            <!-- Hero Section -->
+        <main role="main">
             <section id="hero">
                 <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/99bc8e2acc-5e5f57974f24d3205c70.png" alt="Community center">
                 <div id="hero-content">
@@ -76,215 +70,204 @@
                 </div>
             </section>
 
-            <!-- Popular Sessions Section -->
             <section id="popular-sessions">
                 <div class="container">
                     <h2 class="section-title">Popular Sessions</h2>
                     
-                    <!-- Session Card 1 -->
-                    <div class="session-card card">
+                    <div class="session-card card" role="group" aria-labelledby="session1-heading">
                         <img src="img/pop-moving.png" alt="Youth Program">
                         <div class="session-details">
-                            <h3>Youth Program</h3>
+                            <h3 id="session1-heading">Youth Program</h3>
                             <p class="instructor">with Kristin Summers</p>
                             <p>The Youth Program empowers young people through fun, skill-building activities that promote leadership.</p>
                             <button class="btn-secondary">BOOK NOW</button>
                         </div>
                         <div class="session-benefits">
                             <h4>What you'll get:</h4>
-                            <ul>
-                                <li>Leadership and teamwork experience.</li>
-                                <li>Fun, hands-on activities and workshops.</li>
-                                <li>Opportunities to build confidence.</li>
-                                <li>A chance to make new friends.</li>
+                            <ul role="list">
+                                <li role="listitem">Leadership and teamwork experience.</li>
+                                <li role="listitem">Fun, hands-on activities and workshops.</li>
+                                <li role="listitem">Opportunities to build confidence.</li>
+                                <li role="listitem">A chance to make new friends.</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <!-- Session Card 2 -->
-                    <div class="session-card card">
+                    <div class="session-card card" role="group" aria-labelledby="session2-heading">
                         <img src="img/pop2-moving.png" alt="Morning Yoga Flow">
                         <div class="session-details">
-                            <h3>Morning Yoga Flow</h3>
+                            <h3 id="session2-heading">Morning Yoga Flow</h3>
                             <p class="instructor">with Helena Williams</p>
                             <p>Embrace the morning with a gentle flow to awaken your body and mind. All levels welcome.</p>
                             <button class="btn-secondary">BOOK NOW</button>
                         </div>
                         <div class="session-benefits">
                             <h4>What you'll get:</h4>
-                            <ul>
-                                <li>Increased flexibility and muscle strength.</li>
-                                <li>Improved respiration, energy, and vitality.</li>
-                                <li>Stress reduction and mental clarity.</li>
-                                <li>Connection with a welcoming community.</li>
+                            <ul role="list">
+                                <li role="listitem">Increased flexibility and muscle strength.</li>
+                                <li role="listitem">Improved respiration, energy, and vitality.</li>
+                                <li role="listitem">Stress reduction and mental clarity.</li>
+                                <li role="listitem">Connection with a welcoming community.</li>
                             </ul>
                         </div>
                     </div>
                     
-                    <!-- Session Card 3 -->
-                    <div class="session-card card">
+                    <div class="session-card card" role="group" aria-labelledby="session3-heading">
                         <img src="img/pop3-moving.png" alt="Family Fun Fitness">
                         <div class="session-details">
-                            <h3>Family Fun Fitness</h3>
+                            <h3 id="session3-heading">Family Fun Fitness</h3>
                             <p class="instructor">with David Chen</p>
                             <p>An energetic session for the whole family. Play games and get active together!</p>
                             <button class="btn-secondary">BOOK NOW</button>
                         </div>
                         <div class="session-benefits">
                             <h4>What you'll get:</h4>
-                            <ul>
-                                <li>Fun-filled physical activities for all ages.</li>
-                                <li>Quality bonding time with your family.</li>
-                                <li>Improved coordination and motor skills for kids.</li>
-                                <li>A joyful and supportive environment.</li>
+                            <ul role="list">
+                                <li role="listitem">Fun-filled physical activities for all ages.</li>
+                                <li role="listitem">Quality bonding time with your family.</li>
+                                <li role="listitem">Improved coordination and motor skills for kids.</li>
+                                <li role="listitem">A joyful and supportive environment.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Browse Activities Section -->
             <section id="browse-activities">
                 <div class="container">
                     <h2 class="section-title">Browse Activities</h2>
-                    <div class="activities-grid">
-                        <!-- Activity Card 1 -->
-                        <div class="activity-card card">
+                    <div class="activities-grid" role="list">
+                        <div class="activity-card card" role="listitem">
                             <div>
-                                <h3><i class="fa-solid fa-water"></i> Aqua Aerobics</h3>
+                                <h3><i class="fa-solid fa-water" aria-hidden="true"></i> Aqua Aerobics</h3>
                                 <p>Low-impact cardio for all fitness levels.</p>
                                 <button class="btn-secondary">BOOK</button>
                             </div>
-                            <ul>
-                                <li>Mon, Wed, Fri at 9:00 AM</li>
-                                <li>Instructor: Jane Doe</li>
-                                <li>Location: Main Pool</li>
-                                <li>Duration: 45 minutes</li>
+                            <ul role="list">
+                                <li role="listitem">Mon, Wed, Fri at 9:00 AM</li>
+                                <li role="listitem">Instructor: Jane Doe</li>
+                                <li role="listitem">Location: Main Pool</li>
+                                <li role="listitem">Duration: 45 minutes</li>
                             </ul>
                         </div>
                         
-                        <!-- Activity Card 2 -->
-                        <div class="activity-card card">
+                        <div class="activity-card card" role="listitem">
                             <div>
-                                <h3><i class="fa-solid fa-sun"></i> Sunrise Yoga</h3>
+                                <h3><i class="fa-solid fa-sun" aria-hidden="true"></i> Sunrise Yoga</h3>
                                 <p>Start your day with energizing poses.</p>
                                 <button class="btn-secondary">BOOK</button>
                             </div>
-                            <ul>
-                                <li>Tue, Thu at 6:30 AM</li>
-                                <li>Instructor: Alex Ray</li>
-                                <li>Location: Wellness Studio</li>
-                                <li>Duration: 60 minutes</li>
+                            <ul role="list">
+                                <li role="listitem">Tue, Thu at 6:30 AM</li>
+                                <li role="listitem">Instructor: Alex Ray</li>
+                                <li role="listitem">Location: Wellness Studio</li>
+                                <li role="listitem">Duration: 60 minutes</li>
                             </ul>
                         </div>
                         
-                        <!-- Activity Card 3 -->
-                        <div class="activity-card card">
+                        <div class="activity-card card" role="listitem">
                             <div>
-                                <h3><i class="fa-solid fa-person-running"></i> Morning Running</h3>
+                                <h3><i class="fa-solid fa-person-running" aria-hidden="true"></i> Morning Running</h3>
                                 <p>Jumpstart your day with a refreshing run.</p>
                                 <button class="btn-secondary">BOOK</button>
                             </div>
-                            <ul>
-                                <li>Mon, Wed, at 6:00 AM</li>
-                                <li>Instructor: Jordan Blake</li>
-                                <li>Location: Outdoor Track</li>
-                                <li>Duration: 45 minutes</li>
+                            <ul role="list">
+                                <li role="listitem">Mon, Wed, at 6:00 AM</li>
+                                <li role="listitem">Instructor: Jordan Blake</li>
+                                <li role="listitem">Location: Outdoor Track</li>
+                                <li role="listitem">Duration: 45 minutes</li>
                             </ul>
                         </div>
                         
-                        <!-- Activity Card 4 -->
-                        <div class="activity-card card">
+                        <div class="activity-card card" role="listitem">
                             <div>
-                                <h3><i class="fa-solid fa-wind"></i> Morning Flow</h3>
+                                <h3><i class="fa-solid fa-wind" aria-hidden="true"></i> Morning Flow</h3>
                                 <p>Boost your energy with mindful movement.</p>
                                 <button class="btn-secondary">BOOK</button>
                             </div>
-                            <ul>
-                                <li>Tue, Thu at 6:30 AM</li>
-                                <li>Instructor: Jamie Lin</li>
-                                <li>Location: Rooftop Garden</li>
-                                <li>Duration: 60 minutes</li>
+                            <ul role="list">
+                                <li role="listitem">Tue, Thu at 6:30 AM</li>
+                                <li role="listitem">Instructor: Jamie Lin</li>
+                                <li role="listitem">Location: Rooftop Garden</li>
+                                <li role="listitem">Duration: 60 minutes</li>
                             </ul>
                         </div>
                     </div>
                     <div class="pagination">
-                        <button class="btn-primary" disabled>Less</button>
+                        <button class="btn-primary" disabled aria-disabled="true">Less</button>
                         <button class="btn-secondary">More</button>
                     </div>
                 </div>
             </section>
             
-            <!-- Stretches Section -->
             <section id="stretches">
                 <div class="container">
                     <h2 class="section-title">Explore Different Types of Stretches with Professionals</h2>
-                    <div class="stretches-grid">
-                        <div class="stretch-item">
+                    <div class="stretches-grid" role="list">
+                        <div class="stretch-item" role="listitem">
                             <span>Dynamic Flexibility with Jordan</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="stretch-item">
+                        <div class="stretch-item" role="listitem">
                             <span>Dynamic Warm-ups with Chloe</span>
-                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="stretch-item">
+                        <div class="stretch-item" role="listitem">
                            <span>Flex & Recover with Naomi</span>
-                           <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="stretch-item">
+                        <div class="stretch-item" role="listitem">
                            <span>Static Cool-downs with Alex</span>
-                           <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="stretch-item">
+                        <div class="stretch-item" role="listitem">
                            <span>Total Body Mobility with Devon</span>
-                           <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
-                        <div class="stretch-item">
+                        <div class="stretch-item" role="listitem">
                            <span>PNF Stretching for Flexibility</span>
-                           <i class="fa-solid fa-chevron-down"></i>
+                           <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
-        <footer>
+        <footer role="contentinfo">
             <div class="container">
                 <div class="footer-grid">
                     <div>
-                        <h3>BRIDEPOINT</h3>
+                        <h3 role="heading" aria-level="2">BRIDEPOINT</h3>
                         <p>Fostering belonging and shared experiences through joyful and energizing activities.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div>
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#">Activities</a></li>
-                            <li><a href="#">Sessions</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Wellness</a></li>
+                    <div role="navigation" aria-labelledby="explore-heading">
+                        <h4 id="explore-heading">Explore</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Activities</a></li>
+                            <li role="listitem"><a href="#">Sessions</a></li>
+                            <li role="listitem"><a href="#">Community</a></li>
+                            <li role="listitem"><a href="#">Wellness</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>About</h4>
-                        <ul>
-                            <li><a href="#">Our Mission</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Help Center</a></li>
+                    <div role="navigation" aria-labelledby="about-heading">
+                        <h4 id="about-heading">About</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Our Mission</a></li>
+                            <li role="listitem"><a href="#">Careers</a></li>
+                            <li role="listitem"><a href="#">Contact Us</a></li>
+                            <li role="listitem"><a href="#">Help Center</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                    <div role="navigation" aria-labelledby="legal-heading">
+                        <h4 id="legal-heading">Legal</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Privacy Policy</a></li>
+                            <li role="listitem"><a href="#">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>

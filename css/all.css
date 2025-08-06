@@ -35,6 +35,7 @@
     --tag-gardening-text: #8AB59D;
     --tag-fitness: #E0F0F3;
     --tag-fitness-text: #7BA6B2;
+    
 }
 
 /* Reset and Base Styles */
@@ -363,6 +364,10 @@ header {
     text-align: center;
     color: white;
     overflow: hidden;
+}
+
+.animate__bounce {
+  --animate-duration: 2s;
 }
 
 #hero img {

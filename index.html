@@ -23,15 +23,13 @@
 
 <body>
     <div id="app-container">
-        <!-- Header -->
-        <header>
+        <header role="banner">
             <div class="container">
                 <div class="header-container">
                     <div class="nav-wrapper">
-                        <div id="logo">BRIDEPOINT</div>
+                        <div id="logo" role="heading">BRIDEPOINT</div>
                         
-                        <!-- Desktop Navigation -->
-                        <nav id="main-nav">
+                        <nav id="main-nav" role="navigation">
                             <a href="index.html">Home</a>
                             <a href="moving.html">Get Moving</a>
                             <a href="feel.html">Feeling Good</a>
@@ -39,26 +37,23 @@
                         </nav>
                     </div>
                     
-                    <!-- Desktop Actions -->
                     <div class="header-actions">
                         <a href="#" style="color: var(--brand-gray-dark); text-decoration: none; font-size: 0.875rem;">Help</a>
                         <button class="btn-outline-dark">Login</button>
                         <button class="btn-primary">Sign Up</button>
                     </div>
                     
-                    <!-- Mobile Menu Button -->
-                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu" aria-expanded="false" aria-label="Toggle mobile menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
                 
-                <!-- Mobile Menu -->
-                <div id="mobile-menu">
-                    <a href="index.html">Home</a>
-                    <a href="moving.html">Get Moving</a>
-                    <a href="feel.html">Feeling Good</a>
-                    <a href="#">Track It</a>
-                    <a href="#">Help</a>
+                <div id="mobile-menu" role="menu" aria-hidden="true">
+                    <a href="index.html" role="menuitem">Home</a>
+                    <a href="moving.html" role="menuitem">Get Moving</a>
+                    <a href="feel.html" role="menuitem">Feeling Good</a>
+                    <a href="#" role="menuitem">Track It</a>
+                    <a href="#" role="menuitem">Help</a>
                     <div class="mobile-actions">
                         <button class="btn-outline-dark" style="width: 100%;">Login</button>
                         <button class="btn-primary" style="width: 100%;">Sign Up</button>
@@ -67,39 +62,38 @@
             </div>
         </header>
 
-        <main>
-            <!-- Hero Section -->
+        <main role="main">
             <section id="hero">
-                     <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/48ebb24088-0ac5bedc4066442fd028.png" alt="A group of diverse, happy people during a sunset wellness retreat">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/48ebb24088-0ac5bedc4066442fd028.png" alt="A group of diverse, happy people during a sunset wellness retreat">
                 <div id="hero-content">
-                    <h1>Embrace Freedom,<br>Find Your Connection</h1>
+                    <h1 class="animate__bounce">Embrace Freedom,<br>Find Your Connection</h1>
                     <p>Join a welcoming community focused on growth, wellness, and the pure joy of movement. Your journey to a healthier, happier you starts here.</p>
                     <div id="hero-cta">
                         <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">START NOW</button>
-                        <button class="btn-outline" style="padding: 12px 32px; font-weight: bold;">TAKE A TOUR</button>
+                        <button class="btn-outline"style="padding: 12px 3 2px; font-weight: bold;">TAKE A TOUR</button>
                     </div>
                     <div id="hero-perks">
                         <p>Perks with us</p>
-                        <div class="perks-container">
-                            <div class="perk-item">
+                        <div class="perks-container" role="list">
+                            <div class="perk-item" role="listitem">
                                 <span class="perk-icon" style="background: rgba(96, 165, 250, 0.5);">
                                     <i class="fa-solid fa-users"></i>
                                 </span>
                                 <span>Inclusive Community</span>
                             </div>
-                            <div class="perk-item">
+                            <div class="perk-item" role="listitem">
                                 <span class="perk-icon" style="background: rgba(251, 191, 36, 0.5);">
                                     <i class="fa-solid fa-leaf"></i>
                                 </span>
                                 <span>Wellness Focused</span>
                             </div>
-                            <div class="perk-item">
+                            <div class="perk-item" role="listitem">
                                 <span class="perk-icon" style="background: rgba(251, 146, 60, 0.5);">
                                     <i class="fa-regular fa-face-smile"></i>
                                 </span>
                                 <span>Joyful Engagement</span>
                             </div>
-                            <div class="perk-item">
+                            <div class="perk-item" role="listitem">
                                 <span class="perk-icon" style="background: rgba(99, 102, 241, 0.5);">
                                     <i class="fa-regular fa-handshake"></i>
                                 </span>
@@ -110,19 +104,18 @@
                 </div>
             </section>
 
-            <!-- Popular Sessions Section -->
             <section id="popular-sessions">
                 <div class="container">
                     <h2 class="section-title">Popular Sessions</h2>
                     
-                    <div class="session-block">
+                    <div class="session-block" role="group">
                         <div class="session-content">
-                            <h3>Sunrise Vinyasa Flow</h3>
+                            <h3 role="heading" aria-level="3">Sunrise Vinyasa Flow</h3>
                             <p>Energize your morning with a dynamic flow that connects breath to movement. Perfect for all levels, this session builds strength, flexibility, and inner peace as the sun rises.</p>
-                            <ul class="session-benefits">
-                                <li><i class="fa-solid fa-check"></i> Full-body engagement</li>
-                                <li><i class="fa-solid fa-check"></i> Mindful breathing techniques</li>
-                                <li><i class="fa-solid fa-check"></i> Stress reduction</li>
+                            <ul class="session-benefits" role="list">
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> Full-body engagement</li>
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> Mindful breathing techniques</li>
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> Stress reduction</li>
                             </ul>
                             <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">BOOK NOW</button>
                         </div>
@@ -131,14 +124,14 @@
                         </div>
                     </div>
                     
-                    <div class="session-block">
+                    <div class="session-block" role="group">
                         <div class="session-content">
-                            <h3>Community Dance Fit</h3>
+                            <h3 role="heading" aria-level="3">Community Dance Fit</h3>
                             <p>Let loose and have fun in our most joyful class! A high-energy workout with great music and easy-to-follow moves. It's all about fun, engagement, and feeling great together.</p>
-                            <ul class="session-benefits">
-                                <li><i class="fa-solid fa-check"></i> Cardiovascular workout</li>
-                                <li><i class="fa-solid fa-check"></i> Mood-boosting playlist</li>
-                                <li><i class="fa-solid fa-check"></i> No dance experience needed</li>
+                            <ul class="session-benefits" role="list">
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> Cardiovascular workout</li>
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> Mood-boosting playlist</li>
+                                <li role="listitem"><i class="fa-solid fa-check" aria-hidden="true"></i> No dance experience needed</li>
                             </ul>
                             <button class="btn-secondary" style="padding: 12px 32px; font-weight: bold;">BOOK NOW</button>
                         </div>
@@ -149,16 +142,15 @@
                 </div>
             </section>
 
-            <!-- Our Activities Section -->
             <section id="our-activities">
                 <div class="container">
                     <h2 class="section-title">Our Activities</h2>
-                    <div class="activities-grid">
-                        <div class="activity-card">
+                    <div class="activities-grid" role="list">
+                        <div class="activity-card" role="listitem">
                             <div class="activity-icon" style="background: #dbeafe; color: #3b82f6;">
-                                <i class="fa-solid fa-person-swimming"></i>
+                                <i class="fa-solid fa-person-swimming" aria-hidden="true"></i>
                             </div>
-                            <h4>Aqua Fitness</h4>
+                            <h4 role="heading" aria-level="4">Aqua Fitness</h4>
                             <p>Low-impact cardio and strength training in the pool.</p>
                             <div class="activity-status">
                                 <span class="status-badge">Join</span>
@@ -166,11 +158,11 @@
                             </div>
                         </div>
                         
-                        <div class="activity-card">
+                        <div class="activity-card" role="listitem">
                             <div class="activity-icon" style="background: #d1fae5; color: #10b981;">
-                                <i class="fa-solid fa-person-hiking"></i>
+                                <i class="fa-solid fa-person-hiking" aria-hidden="true"></i>
                             </div>
-                            <h4>Trail Walking Group</h4>
+                            <h4 role="heading" aria-level="4">Trail Walking Group</h4>
                             <p>Explore local nature trails with a friendly, supportive group.</p>
                             <div class="activity-status">
                                 <span class="status-badge">Join</span>
@@ -178,11 +170,11 @@
                             </div>
                         </div>
                         
-                        <div class="activity-card">
+                        <div class="activity-card" role="listitem">
                             <div class="activity-icon" style="background: #e9d5ff; color: #9333ea;">
-                                <i class="fa-solid fa-om"></i>
+                                <i class="fa-solid fa-om" aria-hidden="true"></i>
                             </div>
-                            <h4>Mindful Meditation</h4>
+                            <h4 role="heading" aria-level="4">Mindful Meditation</h4>
                             <p>Guided sessions to calm the mind and reduce stress.</p>
                             <div class="activity-status">
                                 <span class="status-badge">Join</span>
@@ -190,11 +182,11 @@
                             </div>
                         </div>
                         
-                        <div class="activity-card">
+                        <div class="activity-card" role="listitem">
                             <div class="activity-icon" style="background: #fee2e2; color: #ef4444;">
-                                <i class="fa-solid fa-dumbbell"></i>
+                                <i class="fa-solid fa-dumbbell" aria-hidden="true"></i>
                             </div>
-                            <h4>Strength Circuit</h4>
+                            <h4 role="heading" aria-level="4">Strength Circuit</h4>
                             <p>Build functional strength with a varied, full-body workout.</p>
                             <div class="activity-status">
                                 <span class="status-badge">Join</span>
@@ -208,12 +200,11 @@
                 </div>
             </section>
 
-            <!-- Connection and Share Section -->
             <section id="connection-share">
                 <div class="container">
                     <h2 class="section-title">Connection and Share</h2>
                     <div class="connection-container">
-                        <div class="main-post">
+                        <div class="main-post" role="article">
                             <div class="main-post-image">
                                 <img src="img/main-user.png" alt="A happy woman in a fitness class">
                             </div>
@@ -222,33 +213,33 @@
                             </div>
                         </div>
                         
-                        <div class="feed-column">
-                            <div class="feed-item">
-                                <img src="img/user1.png" alt="David Chen">
+                        <div class="feed-column" role="feed">
+                            <div class="feed-item" role="article">
+                                <img src="img/user1.png" alt="Profile picture of David Chen">
                                 <div class="feed-item-content">
                                     <p>David Chen</p>
                                     <p>Hit a new PB on the morning trail walk! 5k in under 30!</p>
                                 </div>
                             </div>
                             
-                            <div class="feed-item">
-                                <img src="img/user2.png" alt="Aisha Khan">
+                            <div class="feed-item" role="article">
+                                <img src="img/user2.png" alt="Profile picture of Aisha Khan">
                                 <div class="feed-item-content">
                                     <p>Aisha Khan</p>
                                     <p>Shared a recipe for her post-workout energy salad.</p>
                                 </div>
                             </div>
                             
-                            <div class="feed-item">
-                                <img src="img/user3.png" alt="Tom Williams">
+                            <div class="feed-item" role="article">
+                                <img src="img/user3.png" alt="Profile picture of Tom Williams">
                                 <div class="feed-item-content">
                                     <p>Tom Williams</p>
                                     <p>Is feeling centered after the sunrise meditation session.</p>
                                 </div>
                             </div>
                             
-                            <div class="feed-item">
-                                <img src="img/user4.png" alt="Margaret Thomas">
+                            <div class="feed-item" role="article">
+                                <img src="img/user4.png" alt="Profile picture of Margaret Thomas">
                                 <div class="feed-item-content">
                                     <p>Margaret Thomas</p>
                                     <p>Is feeling centered after the sunrise meditation session.</p>
@@ -262,42 +253,41 @@
             </section>
         </main>
 
-        <!-- Footer -->
-        <footer>
+        <footer role="contentinfo">
             <div class="container">
                 <div class="footer-grid">
                     <div>
-                        <h3>BRIDEPOINT</h3>
+                        <h3 role="heading" aria-level="2">BRIDEPOINT</h3>
                         <p>Fostering belonging and shared experiences through joyful and energizing activities.</p>
                         <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <div>
-                        <h4>Explore</h4>
-                        <ul>
-                            <li><a href="#">Activities</a></li>
-                            <li><a href="#">Sessions</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Wellness</a></li>
+                    <div role="navigation" aria-labelledby="explore-heading">
+                        <h4 id="explore-heading">Explore</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Activities</a></li>
+                            <li role="listitem"><a href="#">Sessions</a></li>
+                            <li role="listitem"><a href="#">Community</a></li>
+                            <li role="listitem"><a href="#">Wellness</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>About</h4>
-                        <ul>
-                            <li><a href="#">Our Mission</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Help Center</a></li>
+                    <div role="navigation" aria-labelledby="about-heading">
+                        <h4 id="about-heading">About</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Our Mission</a></li>
+                            <li role="listitem"><a href="#">Careers</a></li>
+                            <li role="listitem"><a href="#">Contact Us</a></li>
+                            <li role="listitem"><a href="#">Help Center</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
+                    <div role="navigation" aria-labelledby="legal-heading">
+                        <h4 id="legal-heading">Legal</h4>
+                        <ul role="list">
+                            <li role="listitem"><a href="#">Privacy Policy</a></li>
+                            <li role="listitem"><a href="#">Terms of Service</a></li>
                         </ul>
                     </div>
                 </div>
